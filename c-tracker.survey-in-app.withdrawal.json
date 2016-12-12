@@ -1,7 +1,7 @@
 {
 	"resourceType": "Questionnaire",
 	"id": "c-tracker.survey-in-app.withdrawal",
-	"status": "active",
+	"status": "published",
 	"item": [
 		{
 			"linkId": "withdrawalReason",
@@ -71,6 +71,7 @@
 			"type": "string"	
 		},
 		{
+			"linkId": "goodbye",
 			"type": "display",
 			"text": "We're sorry to see you go!",
 			"_text": {

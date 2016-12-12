@@ -2,7 +2,185 @@
 	"resourceType": "Questionnaire",
 	"id": "c-tracker.survey-in-app.withdrawal",
 	"status": "active",
-	"item": {
-		
-	}
+	"item": [
+		{
+			"linkId": "withdrawalReason",
+			"options": {
+				"reference": "#withdrawalReasons"
+			},
+			"required": true,
+			"text": "I wish to withdraw because...",
+			"_text": {
+				"extension": [
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Ich möchte as der Studie austreten weil..."}]},
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
+				]
+			},
+			"type": "choice"
+		},
+		{
+			"enableWhen": [
+				{
+					"question": "withdrawalReason",
+					"answerCoding": {
+						"code": "dislike-alerts",
+						"system": "http://fhir-registry.smarthealthit.org/ValueSet/clinicaltrial-withdrawal-reason"
+					}
+				}
+			],
+			"type": "display",
+			"linkId": "alertExplanation",
+			"text": "You can always turn off notifications",
+			"_text": {
+				"extension": [
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Sie können Erinnerungen jederzeit ausschalten"}]},
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+					"valueString": "This setting lives in your profile section under “Reminders”.\n\nPress “Cancel” top right if you don't want to withdraw right now."
+				}
+			]
+		},
+		{
+			"enableWhen": [
+				{
+					"question": "withdrawalReason",
+					"answerCoding": {
+						"code": "other",
+						"system": "http://fhir-registry.smarthealthit.org/ValueSet/clinicaltrial-withdrawal-reason"
+					}
+				}
+			],
+			"linkId": "withdrawalReasonOther",
+			"text": "You may let us know your withdraw reason so we can improve the experience in the future",
+			"_text": {
+				"extension": [
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Gerne dürfen Sie uns den Grund für Ihren Austritt mitteilen, so dass wir die Studie in der Zukunft verbessern können"}]},
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
+				]
+			},
+			"type": "string"	
+		},
+		{
+			"type": "display",
+			"text": "We're sorry to see you go!",
+			"_text": {
+				"extension": [
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Schade Sie zu verlienen, wir wünschen Ihnen alles Gute!"}]},
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
+				]
+			},
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+					"valueString": "Thank you for your contributions and the best of luck."
+				}
+			]
+		}
+	],
+	"contained": [
+		{
+			"id": "withdrawalReasons",
+			"resourceType": "ValueSet",
+			"compose": {
+				"include": [
+					{
+						"concept": [
+							{
+								"code": "time-commitment",
+								"display": "Surveys take too much time",
+								"designation": [{
+									"language": "de",
+									"value": "Die Fragebögen sind zu lange"
+								}, {
+									"language": "fr",
+									"value": "N/A"
+								}]
+							},
+							{
+								"code": "too-difficult",
+								"display": "App is too difficult to use",
+								"designation": [{
+									"language": "de",
+									"value": "Die Bedienung der App ist umständlich"
+								}, {
+									"language": "fr",
+									"value": "N/A"
+								}]
+							},
+							{
+								"code": "no-benefit",
+								"display": "App is not beneficial to me",
+								"designation": [{
+									"language": "de",
+									"value": "Die App ist nicht nützlich für mich"
+								}, {
+									"language": "fr",
+									"value": "N/A"
+								}]
+							},
+							{
+								"code": "privacy-concerns",
+								"display": "I have privacy concerns",
+								"designation": [{
+									"language": "de",
+									"value": "Ich mache mir Sorgen um den Datenschutz"
+								}, {
+									"language": "fr",
+									"value": "N/A"
+								}]
+							},
+							{
+								"code": "dislike-alerts",
+								"display": "I don't like receiving notifications from the app",
+								"designation": [{
+									"language": "de",
+									"value": "Die App Erinnerungen stören mich"
+								}, {
+									"language": "fr",
+									"value": "N/A"
+								}]
+							},
+							{
+								"code": "not-infected",
+								"display": "I no longer have hepatitis C",
+								"designation": [{
+									"language": "de",
+									"value": "Ich habe kein Hepatitis C mehr"
+								}, {
+									"language": "fr",
+									"value": "N/A"
+								}]
+							},
+							{
+								"code": "other",
+								"display": "Other",
+								"designation": [{
+									"language": "de",
+									"value": "Anderes"
+								}, {
+									"language": "fr",
+									"value": "N/A"
+								}]
+							}
+						],
+						"system": "http://fhir-registry.smarthealthit.org/ValueSet/clinicaltrial-withdrawal-reason"
+					}
+				]
+			},
+			"name": "Reasons for study withdrawal",
+			"status": "active"
+		}
+	]
 }

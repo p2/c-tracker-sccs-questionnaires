@@ -1,5 +1,778 @@
 {
 	"resourceType": "Questionnaire",
 	"id": "c-tracker.survey-in-app.main",
-	"status": "draft"
+	"status": "draft",
+	"item": [
+		{
+			"linkId": "intro",
+			"type": "display",
+			"text": "Survey",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+					"valueString": "This survey will ask you questions about medications you are taking and how hepatitis C is affecting your daily life."
+				}
+			]
+		},
+		{
+			"linkId": "meds",
+			"type": "group",
+			"item": [
+				{
+					"linkId": "consideredAntivirals",
+					"options": {
+						"reference": "#consideredAntiviralsOptions"
+					},
+					"required": false,
+					"text": "Have you ever taken or considered taking antiviral medications for hepatitis C?",
+					"type": "choice"
+				},
+				{
+					"linkId": "physicianDidPrescribeMeds",
+					"options": {
+						"reference": "#physicianDidPrescribeMedsOptions"
+					},
+					"text": "Did your physician prescribe antiviral medications for your condition?",
+					"type": "choice"
+				},
+				{
+					"linkId": "antiviralMedsYesNo",
+					"options": {
+						"reference": "#yesnodontknow"
+					},
+					"required": true,
+					"text": "Are you on antiviral medications to treat hepatitis now?",
+					"type": "choice"
+				},
+				{
+					"enableWhen": [
+						{
+							"question": "antiviralMedsYesNo",
+							"answerCoding": {
+								"code": "Y",
+								"system": "http://hl7.org/fhir/v2/vs/0136"
+							}
+						}
+					],
+					"linkId": "antiviralMeds",
+					"options": {
+						"reference": "#antivirals"
+					},
+					"repeats": true,
+					"text": "Which hepatitis C antiviral medications are you on?",
+					"type": "choice"
+				}
+			]
+		},
+		{
+			"linkId": "SF36-physicalFunctioning",
+			"type": "group",
+			"required": false,
+			"text": "Activities you might do during a typical day",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+					"valueString": "Does your health now limit you in these activities? If so, how much?"
+				}
+			],
+			"item": [
+				{
+					"linkId": "physicalFunctioning-vigorous",
+					"options": {
+						"reference": "#SF36Answers3"
+					},
+					"required": true,
+					"text": "Vigorous activities",
+					"type": "choice",
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+							"valueString": "Such as running, lifting heavy objects, participating in strenuous sports"
+						}
+					]
+				},
+				{
+					"linkId": "physicalFunctioning-moderate",
+					"options": {
+						"reference": "#SF36Answers3"
+					},
+					"required": true,
+					"text": "Moderate activities",
+					"type": "choice",
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+							"valueString": "Such as moving a table, pushing a vacuum cleaner, bowling, or playing golf"
+						}
+					]
+				},
+				{
+					"linkId": "physicalFunctioning-groceries",
+					"options": {
+						"reference": "#SF36Answers3"
+					},
+					"required": true,
+					"text": "Lifting or carrying groceries",
+					"type": "choice"
+				},
+				{
+					"linkId": "physicalFunctioning-stairs-flights",
+					"options": {
+						"reference": "#SF36Answers3"
+					},
+					"required": true,
+					"text": "Climbing several flights of stairs",
+					"type": "choice"
+				},
+				{
+					"linkId": "physicalFunctioning-stairs-flight",
+					"options": {
+						"reference": "#SF36Answers3"
+					},
+					"required": true,
+					"text": "Climbing one flight of stairs",
+					"type": "choice"
+				},
+				{
+					"linkId": "physicalFunctioning-kneeling",
+					"options": {
+						"reference": "#SF36Answers3"
+					},
+					"required": true,
+					"text": "Bending, kneeling, or stooping",
+					"type": "choice"
+				},
+				{
+					"linkId": "physicalFunctioning-walking-mile",
+					"options": {
+						"reference": "#SF36Answers3"
+					},
+					"required": true,
+					"text": "Walking more than a mile",
+					"type": "choice"
+				},
+				{
+					"linkId": "physicalFunctioning-walking-blocks",
+					"options": {
+						"reference": "#SF36Answers3"
+					},
+					"required": true,
+					"text": "Walking several blocks",
+					"type": "choice"
+				},
+				{
+					"linkId": "physicalFunctioning-walking-block",
+					"options": {
+						"reference": "#SF36Answers3"
+					},
+					"required": true,
+					"text": "Walking one block",
+					"type": "choice"
+				},
+				{
+					"linkId": "physicalFunctioning-bathing",
+					"options": {
+						"reference": "#SF36Answers3"
+					},
+					"required": true,
+					"text": "Bathing or dressing yourself",
+					"type": "choice"
+				}
+			]
+		},
+		{
+			"linkId": "SF36-roleLimitations",
+			"type": "group",
+			"text": "Role limitations due to physical health",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+					"valueString": "During the past 4 weeks, have you had any of the following problems with your work or other regular daily activities as a result of your physical health?"
+				}
+			],
+			"item": [
+				{
+					"linkId": "roleLimitations-reduce-work",
+					"required": true,
+					"text": "Cut down the amount of time you spent on work or other activities",
+					"type": "boolean"
+				},
+				{
+					"linkId": "roleLimitations-accomplished-less",
+					"required": true,
+					"text": "Accomplished less than you would like",
+					"type": "boolean"
+				},
+				{
+					"linkId": "roleLimitations-limited-other",
+					"required": true,
+					"text": "Were limited in the kind of work or other activities",
+					"type": "boolean"
+				},
+				{
+					"linkId": "roleLimitations-had-difficulties",
+					"required": true,
+					"text": "Had difficulty performing the work or other activities (for example, it took extra effort)",
+					"type": "boolean"
+				}
+			]
+		},
+		{
+			"linkId": "SF36-vitality",
+			"type": "group",
+			"text": "Vitality",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+					"valueString": "These questions are about how you feel and how things have been with you during the past 4 weeks. For each question, please give the one answer that comes closest to the way you have been feeling."
+				}
+			],
+			"item": [
+				{
+					"linkId": "vitality-full-of-pep",
+					"type": "choice",
+					"options": {
+						"reference": "#SF36Answers6"
+					},
+					"text": "Did you feel full of pep?",
+					"extension": [
+						{
+							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
+							"valueBoolean": true
+						}
+					]
+				},
+				{
+					"linkId": "vitality-nervous-person",
+					"type": "choice",
+					"options": {
+						"reference": "#SF36Answers6"
+					},
+					"text": "Have you been a very nervous person?",
+					"extension": [
+						{
+							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
+							"valueBoolean": true
+						}
+					]
+				},
+				{
+					"linkId": "vitality-felt-down",
+					"type": "choice",
+					"options": {
+						"reference": "#SF36Answers6"
+					},
+					"text": "Have you felt so down in the dumps that nothing could cheer you up?",
+					"extension": [
+						{
+							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
+							"valueBoolean": true
+						}
+					]
+				},
+				{
+					"linkId": "vitality-felt-calm",
+					"type": "choice",
+					"options": {
+						"reference": "#SF36Answers6"
+					},
+					"text": "Have you felt calm and peaceful?",
+					"extension": [
+						{
+							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
+							"valueBoolean": true
+						}
+					]
+				},
+				{
+					"linkId": "vitality-had-energy",
+					"type": "choice",
+					"options": {
+						"reference": "#SF36Answers6"
+					},
+					"text": "Did you have a lot of energy?",
+					"extension": [
+						{
+							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
+							"valueBoolean": true
+						}
+					]
+				},
+				{
+					"linkId": "vitality-felt-downhearted",
+					"type": "choice",
+					"options": {
+						"reference": "#SF36Answers6"
+					},
+					"text": "Have you felt downhearted and blue?",
+					"extension": [
+						{
+							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
+							"valueBoolean": true
+						}
+					]
+				},
+				{
+					"linkId": "vitality-felt-worn-out",
+					"type": "choice",
+					"options": {
+						"reference": "#SF36Answers6"
+					},
+					"text": "Did you feel worn out?",
+					"extension": [
+						{
+							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
+							"valueBoolean": true
+						}
+					]
+				},
+				{
+					"linkId": "vitality-been-happy",
+					"type": "choice",
+					"options": {
+						"reference": "#SF36Answers6"
+					},
+					"text": "Have you been a happy person?",
+					"extension": [
+						{
+							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
+							"valueBoolean": true
+						}
+					]
+				},
+				{
+					"linkId": "vitality-feel-tired",
+					"type": "choice",
+					"options": {
+						"reference": "#SF36Answers6"
+					},
+					"text": "Did you feel tired?",
+					"extension": [
+						{
+							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
+							"valueBoolean": true
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "group",
+			"linkId": "workLimitationsPast7Days",
+			"required": false,
+			"text": "Effect of hepatitis C",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+					"valueString": "The following questions ask about the effect of your hepatitis C on your ability to work and perform normal daily activities."
+				}
+			],
+			"item": [
+				{
+					"linkId": "employedYesNo",
+					"required": false,
+					"text": "Are you currently employed (working for pay)?",
+					"type": "boolean"
+				},
+				{
+					"type": "group",
+					"linkId": "isEmployed",
+					"enableWhen": [
+						{
+							"question": "employedYesNo",
+							"answerBoolean": true
+						}
+					],
+					"item": [
+						{
+							"linkId": "hoursMissedFromWorkBecauseOfHepC",
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+									"valueString": "During the past seven days, how many hours did you miss from work because of problems associated with your hepatitis C?\n\nInclude hours you missed on sick days, times you went in late, left early, etc., because of your hepatitis C. Do not include time you missed to participate in this study"
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-units",
+									"valueString": "hours"
+								}
+							],
+							"text": "Hours missed from work because of hepatitis C",
+							"type": "quantity"
+						},
+						{
+							"linkId": "hoursMissedFromWorkForOtherReasons",
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+									"valueString": "During the past seven days, how many hours did you miss from work because of any other reason, such as annual leave, holidays, time off to participate in this study?"
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-units",
+									"valueString": "hours"
+								}
+							],
+							"text": "Hours missed from work for other reasons",
+							"type": "quantity"
+						},
+						{
+							"linkId": "hoursWorked",
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+									"valueString": "During the past seven days, how many hours did you actually work?"
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-units",
+									"valueString": "hours"
+								}
+							],
+							"text": "Hours worked",
+							"type": "quantity"
+						},
+						{
+							"linkId": "effectOfHepCOnWork",
+							"extension": [
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+									"valueString": "Think about days you were limited in the amount or kind of work you could do, days you accomplished less than you would like, or days you could not do your work as carefully as usual. If hepatitis C affected your work only a little, choose a low number. Choose a high number if hepatitis C affected your work a great deal."
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueInteger": 0
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+									"valueString": "Hepatitis C had no effect on my work"
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueInteger": 10
+								},
+								{
+									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+									"valueString": "Hepatitis C completely prevented me from working"
+								}
+							],
+							"text": "During the past seven days, how much did your hepatitis C affect your productivity while you were working?",
+							"type": "integer"
+						}
+					]
+				},
+				{
+					"linkId": "effectOfHepCOnDailyLiving",
+					"extension": [
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+							"valueString": "By normal activities, we mean the usual activities you perform, such as working around the house, shopping, childcare, exercising, studying, etc. Think about times you were limited in the amount or kind of activities you could perform and times you accomplished less than you would like. If hepatitis C affected your activities only a little, choose a low number. Choose a high number if hepatitis C affected your activities a great deal."
+						},
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+							"valueInteger": 0
+						},
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/minValue",
+							"valueString": "Hepatitis C had no effect on my daily activities"
+						},
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+							"valueInteger": 10
+						},
+						{
+							"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+							"valueString": "Hepatitis C completely prevented me from performing daily activities"
+						}
+					],
+					"text": "During the past seven days, how much did your hepatitis C affect your ability to perform normal daily activities, outside of work?",
+					"type": "integer"
+				}
+			]
+		},
+		{
+			"linkId": "deviceCarryFrequency",
+			"options": {
+				"reference": "#deviceCarryFrequency"
+			},
+			"required": true,
+			"text": "Lastly, how regularly do you carry your phone or an activity tracker with you?",
+			"type": "choice"
+		},
+		{
+			"linkId": "final",
+			"type": "display",
+			"text": "Thank you for completing this survey!",
+			"extension": [
+				{
+					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
+					"valueString": "Pressing “Done” will complete this survey. We will add a reminder for your next survey to your dashboard."
+				}
+			]
+		}
+	],
+	"contained": [       
+		{
+			"id": "yesnodontknow",
+			"resourceType": "ValueSet",
+			"status": "draft",
+			"name": "Yes/No/Don't Know",
+			"description": "Captures simple yes-no-don't know answers",
+			"compose": {
+				"include": [
+					{
+						"system": "http://hl7.org/fhir/v2/vs/0136"
+					},
+					{
+						"system": "http://hl7.org/fhir/data-absent-reason",
+						"concept": [
+							{
+								"code": "asked",
+								"display": "Don't know"
+							}
+						]
+					}
+				]
+			},
+			"expansion": {
+				"identifier": "urn:uuid:bf99fe50-2c2b-41ad-bd63-bee6919810b4",
+				"timestamp": "2015-07-14T10:00:00Z",
+				"contains": [
+					{
+						"system": "http://hl7.org/fhir/v2/vs/0136",
+						"code": "Y",
+						"display": "Yes"
+					},
+					{
+						"system": "http://hl7.org/fhir/v2/vs/0136",
+						"code": "N",
+						"display": "No"
+					},
+					{
+						"system": "http://hl7.org/fhir/data-absent-reason",
+						"code": "asked",
+						"display": "Don't know"
+					}
+				]
+			}
+		},
+		{
+			"id": "consideredAntiviralsOptions",
+			"resourceType": "ValueSet",
+			"compose": {
+				"include": [
+					{
+						"concept": [
+							{
+								"code": "completed",
+								"display": "I have taken antiviral medications for hepatitis C and completed my course"
+							},
+							{
+								"code": "considered-not-started",
+								"display": "I have considered taking antiviral medications for hepatitis C but have not started"
+							},
+							{
+								"code": "considered-cannot-afford",
+								"display": "I have considered taking antiviral medications for hepatitis C, but cannot afford them"
+							},
+							{
+								"code": "considered-not-taking-for-medical-reasons",
+								"display": "I have considered taking antiviral medications for hepatitis C, but there are medical reasons I cannot take them"
+							},
+							{
+								"code": "considered-not-taking-as-per-physician",
+								"display": "I have considered taking antiviral medications for hepatitis C, but my physician recommended against taking them"
+							},
+							{
+								"code": "not-considered",
+								"display": "I have not considered taking antiviral medications for hepatitis C"
+							}
+						],
+						"system": "http://c3-pro.chip.org/fhir/ValueSet/antivirals-considered"
+					}
+				]
+			},
+			"name": "Options when considering antiviral medications for hepatitis C",
+			"status": "active"
+		},
+		{
+			"id": "physicianDidPrescribeMedsOptions",
+			"resourceType": "ValueSet",
+			"compose": {
+				"include": [
+					{
+						"concept": [
+							{
+								"code": "yes",
+								"display": "Yes"
+							},
+							{
+								"code": "no-not-severe-enough",
+								"display": "No, my condition was not severe enough"
+							},
+							{
+								"code": "no-insurance-declined",
+								"display": "No, insurance did not approve"
+							},
+							{
+								"code": "no-dont-know",
+								"display": "No, I’m not sure why not"
+							},
+							{
+								"code": "other",
+								"display": "Other"
+							}
+						],
+						"system": "http://c3-pro.chip.org/fhir/ValueSet/meds-prescribed"
+					}
+				]
+			},
+			"name": "Answers whether a physician did prescribe antiviral meds",
+			"status": "active"
+		},
+		{
+			"id": "antivirals",
+			"resourceType": "ValueSet",
+			"compose": {
+				"include": [
+					{
+						"concept": [
+							{
+								"code": "9344",
+								"display": "Ribavirin"
+							},
+							{
+								"code": "1484919",
+								"display": "Sovaldi (sofosbuvir)"
+							},
+							{
+								"code": "1591946",
+								"display": "Harvoni (ledipasvir, sofosbuvir)"
+							},
+							{
+								"code": "1606218",
+								"display": "Daklinza (daclatasvir)"
+							},
+							{
+								"code": "1482804",
+								"display": "Olysio (simeprevir)"
+							},
+							{
+								"code": "1597388-CH-pa_om",
+								"display": "Viekirax (paritaprevir, ombitasvir)"
+							},
+							{
+								"code": "1597388-CH-da",
+								"display": "Exviera (dasabuvir)"
+							},
+							{
+								"code": "1734638",
+								"display": "Zepatier (grazoprevir + elbasvir) "
+							},
+							{
+								"code": "1799218",
+								"display": "Epclusa (sofosbuvir + velpatasvir)"
+							},
+							{
+								"code": "0",
+								"display": "None of the above"
+							}
+						],
+						"system": "http://www.nlm.nih.gov/research/umls/rxnorm"
+					}
+				]
+			},
+			"name": "Antiviral Medications",
+			"status": "active"
+		},
+		{
+			"id": "SF36Answers3",
+			"resourceType": "ValueSet",
+			"compose": {
+				"include": [
+					{
+						"concept": [
+							{
+								"code": "1",
+								"display": "Yes, limited a lot"
+							},
+							{
+								"code": "2",
+								"display": "Yes, limited a little"
+							},
+							{
+								"code": "3",
+								"display": "No, not limited at all"
+							}
+						],
+						"system": "http://sf-36.org/fhir/ValueSet/answers-3-levels"
+					}
+				]
+			},
+			"name": "SF-36 Physical Functioning Subscale answers",
+			"status": "active"
+		},
+		{
+			"id": "SF36Answers6",
+			"resourceType": "ValueSet",
+			"name": "SF-36 Vitality Subscale answers",
+			"status": "active",
+			"compose": {
+				"include": [
+					{
+						"concept": [
+							{
+								"code": "1",
+								"display": "All of the time"
+							},
+							{
+								"code": "2",
+								"display": "Most of the time"
+							},
+							{
+								"code": "3",
+								"display": "A good bit of the time"
+							},
+							{
+								"code": "4",
+								"display": "Some of the time"
+							},
+							{
+								"code": "5",
+								"display": "A little of the time"
+							},
+							{
+								"code": "6",
+								"display": "None of the time"
+							}
+						],
+						"system": "http://sf-36.org/fhir/ValueSet/answers-6-levels"
+					}
+				]
+			}
+		},
+		{
+			"id": "deviceCarryFrequency",
+			"resourceType": "ValueSet",
+			"status": "active",
+			"compose": {
+				"include": [
+					{
+						"concept": [
+							{
+								"code": "almost-always",
+								"display": "Almost always during the day"
+							},
+							{
+								"code": "not-regularly",
+								"display": "Not too regularly"
+							},
+							{
+								"code": "almost-never",
+								"display": "Almost never"
+							}
+						],
+						"system": "http://c3-pro.chip.org/fhir/ValueSet/device-carry-frequency"
+					}
+				]
+			}
+		}
+	]
 }

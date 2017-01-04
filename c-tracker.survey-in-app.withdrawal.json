@@ -9,13 +9,13 @@
 				"reference": "#withdrawalReasons"
 			},
 			"required": true,
-			"text": "I wish to withdraw because...",
+			"text": "I wish to withdraw because…",
 			"_text": {
 				"extension": [
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Ich möchte as der Studie austreten weil..."}]},
+						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Ich möchte aus der Studie austreten weil…"}]},
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Je veux retirer de l'étude parce que …"}]}
 				]
 			},
 			"type": "choice"
@@ -44,7 +44,15 @@
 			"extension": [
 				{
 					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-					"valueString": "This setting lives in your profile section under “Reminders”.\n\nPress “Cancel” top right if you don't want to withdraw right now."
+					"valueString": "This setting lives in your profile section under “Reminders”.\n\nPress “Cancel” top right if you don't want to withdraw right now.",
+					"_valueString": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Diese Einstellung befindet sich in Ihrem Profil unter “Erinnerungen”.\n\nDrücken Sie “Abbrechen” oben rechts, wenn Sie die Studie noch nicht verlassen möchten."}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
+						]
+					}
 				}
 			]
 		},
@@ -63,7 +71,7 @@
 			"_text": {
 				"extension": [
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Gerne dürfen Sie uns den Grund für Ihren Austritt mitteilen, so dass wir die Studie in der Zukunft verbessern können"}]},
+						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Gerne dürfen Sie uns den Grund für Ihren Austritt mitteilen, so dass wir die Studie zukünftig verbessern können"}]},
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
 				]
@@ -77,7 +85,7 @@
 			"_text": {
 				"extension": [
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Schade Sie zu verlienen, wir wünschen Ihnen alles Gute!"}]},
+						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Schade, Sie zu verlieren!"}]},
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
 				]
@@ -85,7 +93,15 @@
 			"extension": [
 				{
 					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-					"valueString": "Thank you for your contributions and the best of luck."
+					"valueString": "Thank you for your contributions and the best of luck.",
+					"_valueString": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Vielen Dank für Ihren Beitrag, wir wünschen Ihnen nur das Beste."}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
+						]
+					}
 				}
 			]
 		}
@@ -103,10 +119,10 @@
 								"display": "Surveys take too much time",
 								"designation": [{
 									"language": "de",
-									"value": "Die Fragebögen sind zu lange"
+									"value": "Die Fragebögen sind zu lang"
 								}, {
 									"language": "fr",
-									"value": "N/A"
+									"value": "Les enquêtes prennent trop de temps"
 								}]
 							},
 							{
@@ -117,7 +133,7 @@
 									"value": "Die Bedienung der App ist umständlich"
 								}, {
 									"language": "fr",
-									"value": "N/A"
+									"value": "Le fonctionnement de l'application est maladroit"
 								}]
 							},
 							{
@@ -147,7 +163,7 @@
 								"display": "I don't like receiving notifications from the app",
 								"designation": [{
 									"language": "de",
-									"value": "Die App Erinnerungen stören mich"
+									"value": "Die Erinnerungen der App stören mich"
 								}, {
 									"language": "fr",
 									"value": "N/A"

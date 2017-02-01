@@ -97,7 +97,7 @@
 					"_valueString": {
 						"extension": [
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Vielen Dank für Ihren Beitrag, wir wünschen Ihnen nur das Beste."}]},
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Vielen Dank für Ihre Teilnahme, wir wünschen Ihnen nur das Beste."}]},
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
 						]

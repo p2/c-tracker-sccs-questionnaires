@@ -7,10 +7,26 @@
 			"linkId": "intro",
 			"type": "display",
 			"text": "Survey",
+			"_text": {
+				"extension": [
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Fragebogen"}]},
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Questionnaire"}]}
+				]
+			},
 			"extension": [
 				{
 					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-					"valueString": "This survey will ask you questions about medications you are taking and how hepatitis C is affecting your daily life."
+					"valueString": "This survey will ask you questions about medications you are taking and how hepatitis C is affecting your daily life.",
+					"_valueString": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Dieser Fragebogen wird Sie über Ihre Medikamente befragen und wie Hepatitis C Ihren Alltag beeinflusst."}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+						]
+					}
 				}
 			]
 		},
@@ -25,6 +41,14 @@
 					},
 					"required": false,
 					"text": "Have you ever taken or considered taking antiviral medications for hepatitis C?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Haben Sie jemals antivirale Medikamente gegen Hepatitis C genommen oder dies in Betracht gezogen?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+						]
+					},
 					"type": "choice"
 				},
 				{
@@ -32,7 +56,15 @@
 					"options": {
 						"reference": "#physicianDidPrescribeMedsOptions"
 					},
-					"text": "Did your physician prescribe antiviral medications for your condition?",
+					"text": "Did your physician ever prescribe antiviral medications for your condition?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Hat Ihnen Ihr Arzt je antivirale Medikamente gegen Ihre Infektion verschrieben?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+						]
+					},
 					"type": "choice"
 				},
 				{
@@ -42,6 +74,14 @@
 					},
 					"required": true,
 					"text": "Are you on antiviral medications to treat hepatitis now?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Nehmen Sie zur Zeit antivirale Medikamente gegen Hepatitis C ein?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+						]
+					},
 					"type": "choice"
 				},
 				{
@@ -60,6 +100,14 @@
 					},
 					"repeats": true,
 					"text": "Which hepatitis C antiviral medications are you on?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Welche antiviralen Medikamente gegen Hepatitis C nehmen Sie zur Zeit ein?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+						]
+					},
 					"type": "choice"
 				}
 			]
@@ -69,10 +117,26 @@
 			"type": "group",
 			"required": false,
 			"text": "Activities you might do during a typical day",
+			"_text": {
+				"extension": [
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Im folgenden sind einige Tätigkeiten beschrieben, die Sie vielleicht an einem normalen Tag ausüben"}]},
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Vous pourriez vous livrer aux activités suivantes le même jour"}]}
+				]
+			},
 			"extension": [
 				{
 					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-					"valueString": "Does your health now limit you in these activities? If so, how much?"
+					"valueString": "Does your health now limit you in these activities? If so, how much?",
+					"_valueString": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Sind Sie durch Ihren derzeitigen Gesundheitszustand bei diesen Tätigkeiten eingeschränkt? Wenn ja, wie stark?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Est-ce que votre état de santé vous impose des limites dans ces activités ? Si oui, dans quelle mesure ?"}]}
+						]
+					}
 				}
 			],
 			"item": [
@@ -83,11 +147,27 @@
 					},
 					"required": true,
 					"text": "Vigorous activities",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Anstrengende Tätigkeiten"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Activités intenses"}]}
+						]
+					},
 					"type": "choice",
 					"extension": [
 						{
 							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-							"valueString": "Such as running, lifting heavy objects, participating in strenuous sports"
+							"valueString": "Such as running, lifting heavy objects, participating in strenuous sports",
+							"_valueString": {
+								"extension": [
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Z.Bsp. schnell laufen, schwere Gegenstände heben, anstrengenden Sport treiben"}]},
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Courir, soulever des objets lourds, faire du sport"}]}
+								]
+							}
 						}
 					]
 				},
@@ -98,11 +178,27 @@
 					},
 					"required": true,
 					"text": "Moderate activities",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Mittelschwere Tätigkeiten"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Activités modérées"}]}
+						]
+					},
 					"type": "choice",
 					"extension": [
 						{
 							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-							"valueString": "Such as moving a table, pushing a vacuum cleaner, bowling, or playing golf"
+							"valueString": "Such as moving a table, pushing a vacuum cleaner, bowling, or playing golf",
+							"_valueString": {
+								"extension": [
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Z.Bsp. einen Tisch verschieben, staubsaugen, kegeln, Golf spielen"}]},
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Déplacer une table, passer l’aspirateur"}]}
+								]
+							}
 						}
 					]
 				},
@@ -113,6 +209,14 @@
 					},
 					"required": true,
 					"text": "Lifting or carrying groceries",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Einkaufstaschen heben oder tragen"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Soulever et transporter les achats d’alimentation"}]}
+						]
+					},
 					"type": "choice"
 				},
 				{
@@ -122,6 +226,14 @@
 					},
 					"required": true,
 					"text": "Climbing several flights of stairs",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Mehrere Treppenabsätze steigen"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Monter plusieurs étages à la suite"}]}
+						]
+					},
 					"type": "choice"
 				},
 				{
@@ -131,6 +243,14 @@
 					},
 					"required": true,
 					"text": "Climbing one flight of stairs",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Einen Treppenabsatz steigen"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Monter un seul étage"}]}
+						]
+					},
 					"type": "choice"
 				},
 				{
@@ -140,6 +260,14 @@
 					},
 					"required": true,
 					"text": "Bending, kneeling, or stooping",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Sich beugen, knien, bücken"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Vous agenouiller, vous accroupir ou vous pencher très bas"}]}
+						]
+					},
 					"type": "choice"
 				},
 				{
@@ -149,6 +277,16 @@
 					},
 					"required": true,
 					"text": "Walking more than a mile",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Mehr als 1.5 Kilometer zu Fuß gehen"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de-CH"}, {"url": "content", "valueString": "Mehr als 1.5 Kilometer zu Fuss gehen"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Marcher plus d’un kilomètre et demi"}]}
+						]
+					},
 					"type": "choice"
 				},
 				{
@@ -158,6 +296,16 @@
 					},
 					"required": true,
 					"text": "Walking several blocks",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Mehr als 500 Meter weit zu Fuß gehen"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de-CH"}, {"url": "content", "valueString": "Mehr als 500 Meter weit zu Fuss gehen"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Marcher plus de 500 mètres"}]}
+						]
+					},
 					"type": "choice"
 				},
 				{
@@ -167,6 +315,16 @@
 					},
 					"required": true,
 					"text": "Walking one block",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Ungefähr 100 Meter weit zu Fuß gehen"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de-CH"}, {"url": "content", "valueString": "Ungefähr 100 Meter weit zu Fuss gehen"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Marcher seulement 100 mètres"}]}
+						]
+					},
 					"type": "choice"
 				},
 				{
@@ -176,6 +334,14 @@
 					},
 					"required": true,
 					"text": "Bathing or dressing yourself",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Sich baden oder anziehen"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Prendre un bain, une douche ou vous habiller"}]}
+						]
+					},
 					"type": "choice"
 				}
 			]
@@ -184,10 +350,26 @@
 			"linkId": "SF36-roleLimitations",
 			"type": "group",
 			"text": "Role limitations due to physical health",
+			"_text": {
+				"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Einschränkungen aufgrund körperlicher Verfassung"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Limites du rôle attribuables à la santé physique"}]}
+						]
+			},
 			"extension": [
 				{
 					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-					"valueString": "During the past 4 weeks, have you had any of the following problems with your work or other regular daily activities as a result of your physical health?"
+					"valueString": "During the past 4 weeks, have you had any of the following problems with your work or other regular daily activities as a result of your physical health?",
+					"_valueString": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Hatten Sie in den vergangenen 4 Wochen aufgrund Ihrer körperlichen Gesundheit irgendwelche Schwierigkeiten bei der Arbeit oder anderen alltäglichen Tätigkeiten im Beruf bzw. zu Hause?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Au cours des 4 dernières semaines, avez-vous eu l’une des difficultés suivantes au travail ou lors des activités courantes, du fait de votre santé ?"}]}
+						]
+					}
 				}
 			],
 			"item": [
@@ -195,24 +377,58 @@
 					"linkId": "roleLimitations-reduce-work",
 					"required": true,
 					"text": "Cut down the amount of time you spent on work or other activities",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Ich konnte nicht so lange wie üblich tätig sein"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Limiter le temps passé au travail, ou à d’autres activités ?"}]}
+						]
+					},
 					"type": "boolean"
 				},
 				{
 					"linkId": "roleLimitations-accomplished-less",
 					"required": true,
 					"text": "Accomplished less than you would like",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Ich habe weniger geschafft als ich wollte"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Faire moins de choses que vous ne l’espériez ?"}]}
+						]
+					},
 					"type": "boolean"
 				},
 				{
 					"linkId": "roleLimitations-limited-other",
 					"required": true,
 					"text": "Were limited in the kind of work or other activities",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Ich konnte nur bestimmte Dinge tun"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Trouver des limites au type de travail ou d’activités possibles ?"}]}
+						]
+					},
 					"type": "boolean"
 				},
 				{
 					"linkId": "roleLimitations-had-difficulties",
 					"required": true,
 					"text": "Had difficulty performing the work or other activities (for example, it took extra effort)",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Ich hatte Schwierigkeiten bei der Ausführung (z.B. ich mußte mich besonders anstrengen)"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de-CH"}, {"url": "content", "valueString": "Ich hatte Schwierigkeiten bei der Ausführung (z.B. ich musste mich besonders anstrengen)"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Arriver à tout faire, mais au prix d’un effort"}]}
+						]
+					},
 					"type": "boolean"
 				}
 			]
@@ -221,10 +437,26 @@
 			"linkId": "SF36-vitality",
 			"type": "group",
 			"text": "Vitality",
+			"_text": {
+				"extension": [
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Befinden"}]},
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+				]
+			},
 			"extension": [
 				{
 					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-					"valueString": "These questions are about how you feel and how things have been with you during the past 4 weeks. For each question, please give the one answer that comes closest to the way you have been feeling."
+					"valueString": "These questions are about how you feel and how things have been with you during the past 4 weeks. For each question, please give the one answer that comes closest to the way you have been feeling.",
+					"_valueString": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "In diesen Fragen geht es darum, wie Sie sich fühlen und wie es Ihnen in den vergangenen 4 Wochen gegangen ist. Bitte wählen Sie jene Antwort, die Ihrem Befinden am ehesten entspricht.\n\nWie oft waren Sie in den vergangenen 4 Wochen…"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Ces 9 questions concernent ce qui s’est passé au cours de ces dernières 4 semaines. Pour chaque question, donnez la réponse qui se rapproche le plus de ce que vous avez ressenti.\n\nComment vous sentiez-vous au cours de ces 4 semaines :"}]}
+						]
+					}
 				}
 			],
 			"item": [
@@ -235,6 +467,14 @@
 						"reference": "#SF36Answers6"
 					},
 					"text": "Did you feel full of pep?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Fühlten Sie sich voller Schwung?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Vous sentiez-vous très enthousiaste ?"}]}
+						]
+					},
 					"extension": [
 						{
 							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
@@ -249,6 +489,14 @@
 						"reference": "#SF36Answers6"
 					},
 					"text": "Have you been a very nervous person?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Waren Sie sehr nervös?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Étiez-vous très nerveux ?"}]}
+						]
+					},
 					"extension": [
 						{
 							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
@@ -263,6 +511,14 @@
 						"reference": "#SF36Answers6"
 					},
 					"text": "Have you felt so down in the dumps that nothing could cheer you up?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Waren Sie so niedergeschlagen, daß Sie nichts aufheitern konnte?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Étiez-vous si triste que rien ne pouvait vous égayer ?"}]}
+						]
+					},
 					"extension": [
 						{
 							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
@@ -277,6 +533,14 @@
 						"reference": "#SF36Answers6"
 					},
 					"text": "Have you felt calm and peaceful?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Fühlten Sie sich ruhig und gelassen?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Vous sentiez-vous au calme, en paix ?"}]}
+						]
+					},
 					"extension": [
 						{
 							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
@@ -291,6 +555,14 @@
 						"reference": "#SF36Answers6"
 					},
 					"text": "Did you have a lot of energy?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Waren Sie voller Energie?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Aviez-vous beaucoup d’énergie ?"}]}
+						]
+					},
 					"extension": [
 						{
 							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
@@ -305,6 +577,14 @@
 						"reference": "#SF36Answers6"
 					},
 					"text": "Have you felt downhearted and blue?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Fühlten Sie sich entmutigt und traurig?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Étiez-vous triste et maussade ?"}]}
+						]
+					},
 					"extension": [
 						{
 							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
@@ -319,6 +599,14 @@
 						"reference": "#SF36Answers6"
 					},
 					"text": "Did you feel worn out?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Fühlten Sie sich erschöpft?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Aviez-vous l’impression d’être épuisé(e) ?"}]}
+						]
+					},
 					"extension": [
 						{
 							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
@@ -333,6 +621,14 @@
 						"reference": "#SF36Answers6"
 					},
 					"text": "Have you been a happy person?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Waren Sie glücklich?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Étiez-vous quelqu’un d’heureux ?"}]}
+						]
+					},
 					"extension": [
 						{
 							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
@@ -347,6 +643,14 @@
 						"reference": "#SF36Answers6"
 					},
 					"text": "Did you feel tired?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Fühlten Sie sich müde?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Vous êtes-vous senti fatigué(e) ?"}]}
+						]
+					},
 					"extension": [
 						{
 							"url": "http://fhir-registry.smarthealthit.org/StructureDefinition/value-picker",
@@ -361,10 +665,26 @@
 			"linkId": "workLimitationsPast7Days",
 			"required": false,
 			"text": "Effect of hepatitis C",
+			"_text": {
+				"extension": [
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Auswirkung der Hepatitis C"}]},
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Conséquences de l’hépatite C"}]}
+				]
+			},
 			"extension": [
 				{
 					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-					"valueString": "The following questions ask about the effect of your hepatitis C on your ability to work and perform normal daily activities."
+					"valueString": "The following questions ask about the effect of your hepatitis C on your ability to work and perform normal daily activities.",
+					"_valueString": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Die folgenden Fragen betreffen die Auswirkung Ihrer Hepatitis C auf Ihre Fähigkeit zu arbeiten und Ihren normalen Aktivitäten nachzugehen."}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Les questions suivantes portent sur les conséquences de l’hépatite C sur votre capacité à travailler et à effectuer vos activités habituelles."}]}
+						]
+					}
 				}
 			],
 			"item": [
@@ -372,6 +692,14 @@
 					"linkId": "employedYesNo",
 					"required": false,
 					"text": "Are you currently employed (working for pay)?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Sind Sie zurzeit erwerbstätig?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Occupez-vous un emploi (travail rémunéré) en ce moment ?"}]}
+						]
+					},
 					"type": "boolean"
 				},
 				{
@@ -386,55 +714,144 @@
 					"item": [
 						{
 							"linkId": "hoursMissedFromWorkBecauseOfHepC",
+							"text": "Hours missed from work because of hepatitis C",
+							"_text": {
+								"extension": [
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Arbeitsstunden versäumt wegen Problemen infolge der Hepatitis C"}]},
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Heures de travail manquée à cause de problèmes liés à l’hépatite C"}]}
+								]
+							},
 							"extension": [
 								{
 									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-									"valueString": "During the past seven days, how many hours did you miss from work because of problems associated with your hepatitis C?\n\nInclude hours you missed on sick days, times you went in late, left early, etc., because of your hepatitis C. Do not include time you missed to participate in this study"
+									"valueString": "During the past seven days, how many hours did you miss from work because of problems associated with your hepatitis C?\n\nInclude hours you missed on sick days, times you went in late, left early, etc., because of your hepatitis C. Do not include time you missed to participate in this study",
+									"_valueString": {
+										"extension": [
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Wie viele Arbeitsstunden haben Sie in den letzten sieben Tagen wegen Problemen infolge Ihrer Hepatitis C versäumt?\n\nBerücksichtigen Sie hier die Stunden, die Sie wegen der Hepatitis C an Krankentagen versäumt haben, Verspätungen, vorzeitiges Weggehen usw. Berücksichtigen Sie aber nicht die Stunden, die Sie wegen der Teilnahme an dieser Studie versäumt haben."}]},
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Au cours des sept derniers jours, combien d’heures de travail, au total, avez-vous manquées à cause de problèmes liés à l’hépatite C ?\n\nComptez les heures d’absence pour congé de maladie, les retards et départs précoces du travail, etc. dus à l’hépatite C. Ne comptez pas les moments où vous avez manqué pour participer à cette étude."}]}
+										]
+									}
 								},
 								{
 									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-units",
-									"valueString": "hours"
+									"valueString": "hours",
+									"_valueString": {
+										"extension": [
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Stunden"}]},
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "heures"}]}
+										]
+									}
 								}
 							],
-							"text": "Hours missed from work because of hepatitis C",
 							"type": "quantity"
 						},
 						{
 							"linkId": "hoursMissedFromWorkForOtherReasons",
+							"text": "Hours missed from work for other reasons",
+							"_text": {
+								"extension": [
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Arbeitsstunden versäumt aus anderen Gründen"}]},
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Heures de travail manquée pour toute autre raison"}]}
+								]
+							},
 							"extension": [
 								{
 									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-									"valueString": "During the past seven days, how many hours did you miss from work because of any other reason, such as annual leave, holidays, time off to participate in this study?"
+									"valueString": "During the past seven days, how many hours did you miss from work because of any other reason, such as annual leave, holidays, time off to participate in this study?",
+									"_valueString": {
+										"extension": [
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Wie viele Arbeitsstunden haben Sie in den letzten sieben Tagen aus anderen Gründen versäumt, wie z.B. Ferien, Feiertage, Zeit zur Teilnahme an dieser Studie?"}]},
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Au cours des sept derniers jours, combien d’heures de travail avez-vous manquées pour toute autre raison telle qu’un congé, des vacances ou la participation à cette étude ?"}]}
+										]
+									}
 								},
 								{
 									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-units",
-									"valueString": "hours"
+									"valueString": "hours",
+									"_valueString": {
+										"extension": [
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Stunden"}]},
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "heures"}]}
+										]
+									}
 								}
 							],
-							"text": "Hours missed from work for other reasons",
 							"type": "quantity"
 						},
 						{
 							"linkId": "hoursWorked",
+							"text": "Hours worked",
+							"_text": {
+								"extension": [
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Stunden gearbeitet"}]},
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Heures travaillée"}]}
+								]
+							},
 							"extension": [
 								{
 									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-									"valueString": "During the past seven days, how many hours did you actually work?"
+									"valueString": "During the past seven days, how many hours did you actually work?",
+									"_valueString": {
+										"extension": [
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Wie viele Stunden haben Sie in den letzten sieben Tagen tatsächlich gearbeitet?"}]},
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Au cours des sept derniers jours, combien d’heures de travail au total avez-vous effectuées ?"}]}
+										]
+									}
 								},
 								{
 									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-units",
-									"valueString": "hours"
+									"valueString": "hours",
+									"_valueString": {
+										"extension": [
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Stunden"}]},
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "heures"}]}
+										]
+									}
 								}
 							],
-							"text": "Hours worked",
 							"type": "quantity"
 						},
 						{
 							"linkId": "effectOfHepCOnWork",
+							"text": "During the past seven days, how much did your hepatitis C affect your productivity while you were working?",
+							"_text": {
+								"extension": [
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Wie stark hat sich Ihre Hepatitis C in den letzten sieben Tagen auf Ihre Produktivität bei der Arbeit ausgewirkt?"}]},
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Au cours des sept derniers jours, dans quelle mesure l’hépatite C a-t-elle diminué votre productivité pendant que vous étiez en train de travailler ?"}]}
+								]
+							},
 							"extension": [
 								{
 									"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-									"valueString": "Think about days you were limited in the amount or kind of work you could do, days you accomplished less than you would like, or days you could not do your work as carefully as usual. If hepatitis C affected your work only a little, choose a low number. Choose a high number if hepatitis C affected your work a great deal."
+									"valueString": "Think about days you were limited in the amount or kind of work you could do, days you accomplished less than you would like, or days you could not do your work as carefully as usual. If hepatitis C affected your work only a little, choose a low number. Choose a high number if hepatitis C affected your work a great deal.",
+									"_valueString": {
+										"extension": [
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "de-CH"}, {"url": "content", "valueString": "Denken Sie an Tage, an denen Sie hinsichtlich der Menge oder Art der Arbeit, die Sie schaffen konnten, eingeschränkt waren; Tage, an denen Sie weniger schafften als Sie wollten; Tage, an denen Sie Ihre Arbeit nicht so sorgfältig wie üblich erledigen konnten. Falls sich die Hepatitis C nur geringfügig auf Ihre Arbeit ausgewirkt hat, wählen Sie eine niedrige Zahl. Falls sich die Hepatitis C stark auf Ihre Arbeit ausgewirkt hat, wählen Sie eine hohe Zahl."}]},
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Tenez compte des jours pendant lesquels vous avez été limité(e) dans la quantité ou le type de travail que vous auriez pu accomplir, vous en avez fait moins que vous l’auriez souhaité ou vous ne pouviez pas travailler aussi soigneusement que d’habitude. Si l’hépatite C n’a eu qu’une faible incidence sur votre travail, choisissez une note peu élevée. Choisissez une note élevée si l’hépatite C a beaucoup perturbé votre travail."}]}
+										]
+									}
 								},
 								{
 									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
@@ -442,7 +859,15 @@
 								},
 								{
 									"url": "http://hl7.org/fhir/StructureDefinition/minValue",
-									"valueString": "Hepatitis C had no effect on my work"
+									"valueString": "Hepatitis C had no effect on my work",
+									"_valueString": {
+										"extension": [
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Die Hepatitis C hatte keine Auswirkung auf meine Arbeit."}]},
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "L’hépatite C n’a eu aucun effet sur mon travail"}]}
+										]
+									}
 								},
 								{
 									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
@@ -450,20 +875,44 @@
 								},
 								{
 									"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
-									"valueString": "Hepatitis C completely prevented me from working"
+									"valueString": "Hepatitis C completely prevented me from working",
+									"_valueString": {
+										"extension": [
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Die Hepatitis C hat mich völlig an der Arbeit gehindert."}]},
+											{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+												{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "L’hépatite C m’a complètement empêché(e) de travailler"}]}
+										]
+									}
 								}
 							],
-							"text": "During the past seven days, how much did your hepatitis C affect your productivity while you were working?",
 							"type": "integer"
 						}
 					]
 				},
 				{
 					"linkId": "effectOfHepCOnDailyLiving",
+					"text": "During the past seven days, how much did your hepatitis C affect your ability to perform normal daily activities, outside of work?",
+					"_text": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Wie stark hat sich Ihre Hepatitis C in den letzten sieben Tagen auf Ihre Fähigkeit ausgewirkt, Ihren normalen täglichen Aktivitäten nachzugehen, ausgenommen Erwerbstätigkeit?"}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Au cours des sept derniers jours, dans quelle mesure l’hépatite C a-t-elle diminué votre capacité à effectuer vos activités quotidiennes habituelles en dehors de votre travail ?"}]}
+						]
+					},
 					"extension": [
 						{
 							"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-							"valueString": "By normal activities, we mean the usual activities you perform, such as working around the house, shopping, childcare, exercising, studying, etc. Think about times you were limited in the amount or kind of activities you could perform and times you accomplished less than you would like. If hepatitis C affected your activities only a little, choose a low number. Choose a high number if hepatitis C affected your activities a great deal."
+							"valueString": "By normal activities, we mean the usual activities you perform, such as working around the house, shopping, childcare, exercising, studying, etc. Think about times you were limited in the amount or kind of activities you could perform and times you accomplished less than you would like. If hepatitis C affected your activities only a little, choose a low number. Choose a high number if hepatitis C affected your activities a great deal.",
+							"_valueString": {
+								"extension": [
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Unter normalen Aktivitäten verstehen wir Ihre üblichen Tätigkeiten, z.B. Hausarbeit, Einkaufen, Kinderbetreuung, körperliches Training, Studieren usw. Denken Sie an Zeiten, in denen Sie hinsichtlich der Menge oder Art der Aktivitäten, die Sie ausführen konnten, eingeschränkt waren und Zeiten, in denen Sie weniger schafften, als Sie wollten. Falls sich die Hepatitis C nur geringfügig auf Ihre Aktivitäten ausgewirkt hat, wählen Sie eine niedrige Zahl. Falls sich die Hepatitis C stark auf Ihre Aktivitäten ausgewirkt hat, wählen Sie eine hohe Zahl."}]},
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Par activités habituelles, nous entendons les activités que vous effectuez régulièrement, telles que les travaux ménagers, les courses, l’exercice, s’occuper des enfants, étudier, etc. Tenez compte des moments où vous avez été limité(e) dans la quantité ou le type d’activités que vous auriez pu accomplir et de ceux où vous en avez fait moins que vous ne l’auriez souhaité. Si l’hépatite C n’a eu qu’une faible incidence sur vos activités, choisissez une note peu élevée. Choisissez une note élevée si l’hépatite C a beaucoup perturbé vos activités."}]}
+								]
+							}
 						},
 						{
 							"url": "http://hl7.org/fhir/StructureDefinition/minValue",
@@ -471,7 +920,15 @@
 						},
 						{
 							"url": "http://hl7.org/fhir/StructureDefinition/minValue",
-							"valueString": "Hepatitis C had no effect on my daily activities"
+							"valueString": "Hepatitis C had no effect on my daily activities",
+							"_valueString": {
+								"extension": [
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Die Hepatitis C hatte keine Auswirkung auf meine täglichen Aktivitäten"}]},
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "L’hépatite C n’a eu aucun effet sur mes activités quotidiennes"}]}
+								]
+							}
 						},
 						{
 							"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
@@ -479,10 +936,17 @@
 						},
 						{
 							"url": "http://hl7.org/fhir/StructureDefinition/maxValue",
-							"valueString": "Hepatitis C completely prevented me from performing daily activities"
+							"valueString": "Hepatitis C completely prevented me from performing daily activities",
+							"_valueString": {
+								"extension": [
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Die Hepatitis C hat mich völlig an der Ausführung meiner täglichen Aktivitäten gehindert"}]},
+									{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+										{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "L’hépatite C m’a complètement empêché(e) d’effectuer mes activités quotidiennes"}]}
+								]
+							}
 						}
 					],
-					"text": "During the past seven days, how much did your hepatitis C affect your ability to perform normal daily activities, outside of work?",
 					"type": "integer"
 				}
 			]
@@ -494,16 +958,40 @@
 			},
 			"required": true,
 			"text": "Lastly, how regularly do you carry your phone or an activity tracker with you?",
+			"_text": {
+				"extension": [
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Zu guter letzt, tragen Sie Ihr Mobiltelefon oder Ihren Aktivitäts-Tracker regelmässig mit sich?"}]},
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+				]
+			},
 			"type": "choice"
 		},
 		{
 			"linkId": "final",
 			"type": "display",
 			"text": "Thank you for completing this survey!",
+			"_text": {
+				"extension": [
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Vielen Dank für’s Ausfüllen dieses Fragebogens!"}]},
+					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+				]
+			},
 			"extension": [
 				{
 					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-					"valueString": "Pressing “Done” will complete this survey. We will add a reminder for your next survey to your dashboard."
+					"valueString": "Pressing “Done” will complete this survey. We will add a reminder for your next survey to your dashboard.",
+					"_valueString": {
+						"extension": [
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Sie können nun “Fertig” tappen, um diesen Fragebogen abzuschliessen. Wir werden in Ihrem Dashboard anzeigen, wann der nächste Fragebogen beantwortet werden kann."}]},
+							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+						]
+					}
 				}
 			]
 		}
@@ -525,7 +1013,14 @@
 						"concept": [
 							{
 								"code": "asked",
-								"display": "Don't know"
+								"display": "Don't know",
+								"designation": [{
+									"language": "de",
+									"value": "Ich weiss es nicht"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							}
 						]
 					}
@@ -538,17 +1033,38 @@
 					{
 						"system": "http://hl7.org/fhir/v2/vs/0136",
 						"code": "Y",
-						"display": "Yes"
+						"display": "Yes",
+						"designation": [{
+							"language": "de",
+							"value": "Ja"
+						}, {
+							"language": "fr",
+							"value": "Oui"
+						}]
 					},
 					{
 						"system": "http://hl7.org/fhir/v2/vs/0136",
 						"code": "N",
-						"display": "No"
+						"display": "No",
+						"designation": [{
+							"language": "de",
+							"value": "Nein"
+						}, {
+							"language": "fr",
+							"value": "Non"
+						}]
 					},
 					{
 						"system": "http://hl7.org/fhir/data-absent-reason",
 						"code": "asked",
-						"display": "Don't know"
+						"display": "Don't know",
+						"designation": [{
+							"language": "de",
+							"value": "Ich weiss es nicht"
+						}, {
+							"language": "fr",
+							"value": "TRANSLATE"
+						}]
 					}
 				]
 			}
@@ -562,27 +1078,69 @@
 						"concept": [
 							{
 								"code": "completed",
-								"display": "I have taken antiviral medications for hepatitis C and completed my course"
+								"display": "I have taken antiviral medications for hepatitis C and completed my course",
+								"designation": [{
+									"language": "de",
+									"value": "Ich habe antivirale Medikamente gegen Hepatitis C genommen und die Therapie beendet"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							},
 							{
 								"code": "considered-not-started",
-								"display": "I have considered taking antiviral medications for hepatitis C but have not started"
+								"display": "I have considered taking antiviral medications for hepatitis C but have not started",
+								"designation": [{
+									"language": "de",
+									"value": "Ich habe eine Behandlung mit antiviralen Medikamenten gegen Hepatitis C in Betracht gezogen aber noch nicht begonnen"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							},
 							{
 								"code": "considered-cannot-afford",
-								"display": "I have considered taking antiviral medications for hepatitis C, but cannot afford them"
+								"display": "I have considered taking antiviral medications for hepatitis C, but cannot afford them",
+								"designation": [{
+									"language": "de",
+									"value": "Ich habe eine Behandlung mit antiviralen Medikamenten gegen Hepatitis C in Betracht gezogen, kann mir diese aber finanziell nicht leisten"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							},
 							{
 								"code": "considered-not-taking-for-medical-reasons",
-								"display": "I have considered taking antiviral medications for hepatitis C, but there are medical reasons I cannot take them"
+								"display": "I have considered taking antiviral medications for hepatitis C, but there are medical reasons I cannot take them",
+								"designation": [{
+									"language": "de",
+									"value": "Ich habe eine Behandlung mit antiviralen Medikamenten gegen Hepatitis C in Betracht gezogen, kann diese Behandlung aber aus medizinischen Gründen nicht beginnen"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							},
 							{
 								"code": "considered-not-taking-as-per-physician",
-								"display": "I have considered taking antiviral medications for hepatitis C, but my physician recommended against taking them"
+								"display": "I have considered taking antiviral medications for hepatitis C, but my physician recommended against taking them",
+								"designation": [{
+									"language": "de",
+									"value": "Ich habe eine Behandlung mit antiviralen Medikamenten gegen Hepatitis C in Betracht gezogen, main Arzt hat mir aber davon abgeraten"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							},
 							{
 								"code": "not-considered",
-								"display": "I have not considered taking antiviral medications for hepatitis C"
+								"display": "I have not considered taking antiviral medications for hepatitis C",
+								"designation": [{
+									"language": "de",
+									"value": "Bisher habe ich eine Behandlung mit antiviralen Medikamenten gegen Hepatitis C nicht in Betracht gezogen"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							}
 						],
 						"system": "http://c3-pro.chip.org/fhir/ValueSet/antivirals-considered"
@@ -601,23 +1159,58 @@
 						"concept": [
 							{
 								"code": "yes",
-								"display": "Yes"
+								"display": "Yes",
+								"designation": [{
+									"language": "de",
+									"value": "Ja"
+								}, {
+									"language": "fr",
+									"value": "Oui"
+								}]
 							},
 							{
 								"code": "no-not-severe-enough",
-								"display": "No, my condition was not severe enough"
+								"display": "No, my condition was not severe enough",
+								"designation": [{
+									"language": "de",
+									"value": "Nein, die Krankheit war nicht schwerwiegend genug"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							},
 							{
 								"code": "no-insurance-declined",
-								"display": "No, insurance did not approve"
+								"display": "No, insurance did not approve",
+								"designation": [{
+									"language": "de",
+									"value": "Nein, die Versicherung hätte die Behandlung nicht übernommen"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							},
 							{
 								"code": "no-dont-know",
-								"display": "No, I’m not sure why not"
+								"display": "No, I’m not sure why not",
+								"designation": [{
+									"language": "de",
+									"value": "Nein; warum nicht weiss ich nicht"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							},
 							{
 								"code": "other",
-								"display": "Other"
+								"display": "Other",
+								"designation": [{
+									"language": "de",
+									"value": "Anderes"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							}
 						],
 						"system": "http://c3-pro.chip.org/fhir/ValueSet/meds-prescribed"
@@ -664,7 +1257,7 @@
 							},
 							{
 								"code": "1734638",
-								"display": "Zepatier (grazoprevir + elbasvir) "
+								"display": "Zepatier (grazoprevir + elbasvir)"
 							},
 							{
 								"code": "1799218",
@@ -672,7 +1265,14 @@
 							},
 							{
 								"code": "0",
-								"display": "None of the above"
+								"display": "None of the above",
+								"designation": [{
+									"language": "de",
+									"value": "Keines der genannten"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							}
 						],
 						"system": "http://www.nlm.nih.gov/research/umls/rxnorm"
@@ -691,15 +1291,36 @@
 						"concept": [
 							{
 								"code": "1",
-								"display": "Yes, limited a lot"
+								"display": "Yes, limited a lot",
+								"designation": [{
+									"language": "de",
+									"value": "Ja, stark eingeschränkt"
+								}, {
+									"language": "fr",
+									"value": "Oui, très limité"
+								}]
 							},
 							{
 								"code": "2",
-								"display": "Yes, limited a little"
+								"display": "Yes, limited a little",
+								"designation": [{
+									"language": "de",
+									"value": "Ja, etwas eingeschränkt"
+								}, {
+									"language": "fr",
+									"value": "Oui, plutôt limité"
+								}]
 							},
 							{
 								"code": "3",
-								"display": "No, not limited at all"
+								"display": "No, not limited at all",
+								"designation": [{
+									"language": "de",
+									"value": "Nein , überhaupt nicht eingeschränkt"
+								}, {
+									"language": "fr",
+									"value": "Pas limité du tout"
+								}]
 							}
 						],
 						"system": "http://sf-36.org/fhir/ValueSet/answers-3-levels"
@@ -720,27 +1341,69 @@
 						"concept": [
 							{
 								"code": "1",
-								"display": "All of the time"
+								"display": "All of the time",
+								"designation": [{
+									"language": "de",
+									"value": "Immer"
+								}, {
+									"language": "fr",
+									"value": "Tout le temps"
+								}]
 							},
 							{
 								"code": "2",
-								"display": "Most of the time"
+								"display": "Most of the time",
+								"designation": [{
+									"language": "de",
+									"value": "Meistens"
+								}, {
+									"language": "fr",
+									"value": "Le plus souvent"
+								}]
 							},
 							{
 								"code": "3",
-								"display": "A good bit of the time"
+								"display": "A good bit of the time",
+								"designation": [{
+									"language": "de",
+									"value": "Ziemlich oft"
+								}, {
+									"language": "fr",
+									"value": "Très souvent"
+								}]
 							},
 							{
 								"code": "4",
-								"display": "Some of the time"
+								"display": "Some of the time",
+								"designation": [{
+									"language": "de",
+									"value": "Manchmal"
+								}, {
+									"language": "fr",
+									"value": "Parfois"
+								}]
 							},
 							{
 								"code": "5",
-								"display": "A little of the time"
+								"display": "A little of the time",
+								"designation": [{
+									"language": "de",
+									"value": "Selten"
+								}, {
+									"language": "fr",
+									"value": "Peu souvent"
+								}]
 							},
 							{
 								"code": "6",
-								"display": "None of the time"
+								"display": "None of the time",
+								"designation": [{
+									"language": "de",
+									"value": "Nie"
+								}, {
+									"language": "fr",
+									"value": "Jamais"
+								}]
 							}
 						],
 						"system": "http://sf-36.org/fhir/ValueSet/answers-6-levels"
@@ -758,15 +1421,36 @@
 						"concept": [
 							{
 								"code": "almost-always",
-								"display": "Almost always during the day"
+								"display": "Almost always during the day",
+								"designation": [{
+									"language": "de",
+									"value": "Während des Tages praktisch immer"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							},
 							{
 								"code": "not-regularly",
-								"display": "Not too regularly"
+								"display": "Not too regularly",
+								"designation": [{
+									"language": "de",
+									"value": "Nicht sehr regelmässig"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							},
 							{
 								"code": "almost-never",
-								"display": "Almost never"
+								"display": "Almost never",
+								"designation": [{
+									"language": "de",
+									"value": "Fast nie"
+								}, {
+									"language": "fr",
+									"value": "TRANSLATE"
+								}]
 							}
 						],
 						"system": "http://c3-pro.chip.org/fhir/ValueSet/device-carry-frequency"

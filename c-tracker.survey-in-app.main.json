@@ -353,7 +353,7 @@
 			"_text": {
 				"extension": [
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Einschränkungen aufgrund körperlicher Verfassung"}]},
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Einschränkungen aufgrund körperlicher Gesundheit"}]},
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Limites du rôle attribuables à la santé physique"}]}
 						]
@@ -452,7 +452,7 @@
 					"_valueString": {
 						"extension": [
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "In diesen Fragen geht es darum, wie Sie sich fühlen und wie es Ihnen in den vergangenen 4 Wochen gegangen ist. Bitte wählen Sie jene Antwort, die Ihrem Befinden am ehesten entspricht.\n\nWie oft waren Sie in den vergangenen 4 Wochen…"}]},
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "In diesen Fragen geht es darum, wie Sie sich fühlen und wie es Ihnen in den vergangenen 4 Wochen gegangen ist. Bitte wählen Sie jene Antwort, die Ihrem Befinden am ehesten entspricht.\n\nIn den vergangenen 4 Wochen…"}]},
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Ces 9 questions concernent ce qui s’est passé au cours de ces dernières 4 semaines. Pour chaque question, donnez la réponse qui se rapproche le plus de ce que vous avez ressenti.\n\nComment vous sentiez-vous au cours de ces 4 semaines :"}]}
 						]
@@ -1092,7 +1092,7 @@
 								"display": "I have considered taking antiviral medications for hepatitis C but have not started",
 								"designation": [{
 									"language": "de",
-									"value": "Ich habe eine Behandlung mit antiviralen Medikamenten gegen Hepatitis C in Betracht gezogen aber noch nicht begonnen"
+									"value": "In Betracht gezogen aber noch nicht begonnen"
 								}, {
 									"language": "fr",
 									"value": "TRANSLATE"
@@ -1103,7 +1103,7 @@
 								"display": "I have considered taking antiviral medications for hepatitis C, but cannot afford them",
 								"designation": [{
 									"language": "de",
-									"value": "Ich habe eine Behandlung mit antiviralen Medikamenten gegen Hepatitis C in Betracht gezogen, kann mir diese aber finanziell nicht leisten"
+									"value": "In Betracht gezogen, kann mir diese aber finanziell nicht leisten"
 								}, {
 									"language": "fr",
 									"value": "TRANSLATE"
@@ -1114,7 +1114,7 @@
 								"display": "I have considered taking antiviral medications for hepatitis C, but there are medical reasons I cannot take them",
 								"designation": [{
 									"language": "de",
-									"value": "Ich habe eine Behandlung mit antiviralen Medikamenten gegen Hepatitis C in Betracht gezogen, kann diese Behandlung aber aus medizinischen Gründen nicht beginnen"
+									"value": "In Betracht gezogen, kann diese Behandlung aber aus medizinischen Gründen nicht beginnen"
 								}, {
 									"language": "fr",
 									"value": "TRANSLATE"
@@ -1125,7 +1125,7 @@
 								"display": "I have considered taking antiviral medications for hepatitis C, but my physician recommended against taking them",
 								"designation": [{
 									"language": "de",
-									"value": "Ich habe eine Behandlung mit antiviralen Medikamenten gegen Hepatitis C in Betracht gezogen, main Arzt hat mir aber davon abgeraten"
+									"value": "In Betracht gezogen, mein Arzt hat mir aber davon abgeraten"
 								}, {
 									"language": "fr",
 									"value": "TRANSLATE"

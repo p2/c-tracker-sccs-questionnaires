@@ -5,6 +5,7 @@
 	"item": [
 		{
 			"linkId": "withdrawalReason",
+			"type": "choice",
 			"options": {
 				"reference": "#withdrawalReasons"
 			},
@@ -17,10 +18,11 @@
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Je veux retirer de l'étude parce que …"}]}
 				]
-			},
-			"type": "choice"
+			}
 		},
 		{
+			"type": "display",
+			"linkId": "alertExplanation",
 			"enableWhen": [
 				{
 					"question": "withdrawalReason",
@@ -30,8 +32,6 @@
 					}
 				}
 			],
-			"type": "display",
-			"linkId": "alertExplanation",
 			"text": "You can always turn off notifications",
 			"_text": {
 				"extension": [
@@ -57,6 +57,8 @@
 			]
 		},
 		{
+			"linkId": "withdrawalReasonOther",
+			"type": "string",
 			"enableWhen": [
 				{
 					"question": "withdrawalReason",
@@ -66,7 +68,6 @@
 					}
 				}
 			],
-			"linkId": "withdrawalReasonOther",
 			"text": "You may let us know your withdraw reason so we can improve the experience in the future",
 			"_text": {
 				"extension": [
@@ -75,8 +76,7 @@
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
 				]
-			},
-			"type": "string"	
+			}
 		},
 		{
 			"linkId": "goodbye",

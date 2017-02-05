@@ -16,7 +16,7 @@
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Ich möchte aus der Studie austreten weil…"}]},
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Je veux retirer de l'étude parce que …"}]}
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Je veux me rétirer de l'étude parce que …"}]}
 				]
 			}
 		},
@@ -38,19 +38,19 @@
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Sie können Erinnerungen jederzeit ausschalten"}]},
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Vous pouvez en tout moment arrêter les notifications"}]}
 				]
 			},
 			"extension": [
 				{
 					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-					"valueString": "This setting lives in your profile section under “Reminders”.\n\nPress “Cancel” top right if you don't want to withdraw right now.",
+					"valueString": "This setting lives in your profile section under « Reminders ».\n\nPress « Cancel » top right if you don't want to withdraw right now.",
 					"_valueString": {
 						"extension": [
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Diese Einstellung befindet sich in Ihrem Profil unter “Erinnerungen”.\n\nDrücken Sie “Abbrechen” oben rechts, wenn Sie die Studie noch nicht verlassen möchten."}]},
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Diese Einstellung befindet sich in Ihrem Profil unter « Erinnerungen ».\n\nDrücken Sie « Abbrechen » oben rechts, wenn Sie die Studie noch nicht verlassen möchten."}]},
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Ce paramètre setrouve dans votre profil sous « Rappel ». Appuyez sur « Annuler » en haut à droite si vous ne souhaitez pas quiter l’étude."}]}
 						]
 					}
 				}
@@ -74,7 +74,7 @@
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Gerne dürfen Sie uns den Grund für Ihren Austritt mitteilen, so dass wir die Studie zukünftig verbessern können"}]},
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "On aimerait connaître les raisons de votre abandon afin d’améliorer notre travail futur"}]}
 				]
 			}
 		},
@@ -87,7 +87,7 @@
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Schade, Sie zu verlieren!"}]},
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Nous sommes désolés de vous voir vous rétirer de l’étude !"}]}
 				]
 			},
 			"extension": [
@@ -99,7 +99,7 @@
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Vielen Dank für Ihre Teilnahme, wir wünschen Ihnen nur das Beste."}]},
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "N/A"}]}
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Merci de votre participation ! Meilleurs voeux de bonne continuation !"}]}
 						]
 					}
 				}
@@ -122,7 +122,7 @@
 									"value": "Die Fragebögen sind zu lang"
 								}, {
 									"language": "fr",
-									"value": "Les enquêtes prennent trop de temps"
+									"value": "Le sondage prend trop de temps"
 								}]
 							},
 							{
@@ -133,7 +133,7 @@
 									"value": "Die Bedienung der App ist umständlich"
 								}, {
 									"language": "fr",
-									"value": "Le fonctionnement de l'application est maladroit"
+									"value": "Cette application est trop compliquée"
 								}]
 							},
 							{
@@ -144,7 +144,7 @@
 									"value": "Die App ist nicht nützlich für mich"
 								}, {
 									"language": "fr",
-									"value": "N/A"
+									"value": "Ce sondage ne m’apporte pas de bénéfices"
 								}]
 							},
 							{
@@ -155,7 +155,7 @@
 									"value": "Ich mache mir Sorgen um den Datenschutz"
 								}, {
 									"language": "fr",
-									"value": "N/A"
+									"value": "J’ai des soucis de confidentialté"
 								}]
 							},
 							{
@@ -166,7 +166,7 @@
 									"value": "Die Erinnerungen der App stören mich"
 								}, {
 									"language": "fr",
-									"value": "N/A"
+									"value": "Je n’aime pas recevoir des notifications de la part de l’application"
 								}]
 							},
 							{
@@ -177,7 +177,7 @@
 									"value": "Ich habe kein Hepatitis C mehr"
 								}, {
 									"language": "fr",
-									"value": "N/A"
+									"value": "Je n’ai plus d’hépatite C"
 								}]
 							},
 							{
@@ -188,7 +188,7 @@
 									"value": "Anderes"
 								}, {
 									"language": "fr",
-									"value": "N/A"
+									"value": "Autres raisons"
 								}]
 							}
 						],

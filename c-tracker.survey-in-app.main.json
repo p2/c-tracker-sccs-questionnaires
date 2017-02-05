@@ -12,7 +12,7 @@
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Fragebogen"}]},
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Questionnaire"}]}
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Sondage"}]}
 				]
 			},
 			"extension": [
@@ -24,7 +24,7 @@
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Dieser Fragebogen wird Sie über Ihre Medikamente befragen und wie Hepatitis C Ihren Alltag beeinflusst."}]},
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Ce sondage vous posera des questions concernant les médicaments que vous êtes en train de prendre et comment l’hépatite C atteint votre vie quotidienne."}]}
 						]
 					}
 				}
@@ -46,7 +46,7 @@
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Haben Sie jemals antivirale Medikamente gegen Hepatitis C genommen oder dies in Betracht gezogen?"}]},
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Au passé, avez-vous déjà pris (ou envisagé de prendre) des médicaments contre l’hépatite C ?"}]}
 						]
 					},
 					"type": "choice"
@@ -62,7 +62,7 @@
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Hat Ihnen Ihr Arzt je antivirale Medikamente gegen Ihre Infektion verschrieben?"}]},
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Votre médecin a-t-il/elle déjà precsrit des médicaments pour soigner votre hépatite?"}]}
 						]
 					},
 					"type": "choice"
@@ -79,7 +79,7 @@
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Nehmen Sie zur Zeit antivirale Medikamente gegen Hepatitis C ein?"}]},
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Prenez-vous des médicaments contre l’hépatite C en ce moment ?"}]}
 						]
 					},
 					"type": "choice"
@@ -105,7 +105,7 @@
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Welche antiviralen Medikamente gegen Hepatitis C nehmen Sie zur Zeit ein?"}]},
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Quels médicaments contre l’hépatite C prenez-vous en ce moment?"}]}
 						]
 					},
 					"type": "choice"
@@ -442,7 +442,7 @@
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Befinden"}]},
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "État de santé"}]}
 				]
 			},
 			"extension": [
@@ -963,7 +963,7 @@
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Zu guter letzt, tragen Sie Ihr Mobiltelefon oder Ihren Aktivitäts-Tracker regelmässig mit sich?"}]},
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Dernière question, avec quelle fréquence transportez-vous un téléphone ou un capteur d’activité ?"}]}
 				]
 			},
 			"type": "choice"
@@ -977,19 +977,19 @@
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
 						{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Vielen Dank für’s Ausfüllen dieses Fragebogens!"}]},
 					{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+						{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "Merci d’avoir complété ce sondage !"}]}
 				]
 			},
 			"extension": [
 				{
 					"url": "http://hl7.org/fhir/StructureDefinition/questionnaire-instruction",
-					"valueString": "Pressing “Done” will complete this survey. We will add a reminder for your next survey to your dashboard.",
+					"valueString": "Pressing « Done » will complete this survey. We will add a reminder for your next survey to your dashboard.",
 					"_valueString": {
 						"extension": [
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Sie können nun “Fertig” tappen, um diesen Fragebogen abzuschliessen. Wir werden in Ihrem Dashboard anzeigen, wann der nächste Fragebogen beantwortet werden kann."}]},
+								{"url": "lang", "valueCode": "de"}, {"url": "content", "valueString": "Sie können nun « Fertig » tappen, um diesen Fragebogen abzuschliessen. Wir werden in Ihrem Dashboard anzeigen, wann der nächste Fragebogen beantwortet werden kann."}]},
 							{"url": "http://hl7.org/fhir/StructureDefinition/translation", "extension": [
-								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "TRANSLATE"}]}
+								{"url": "lang", "valueCode": "fr"}, {"url": "content", "valueString": "En pressant sur la touche « Terminer » vous terminez le sondage. Nous allons vous signaler le prochain sondage sur l’écran."}]}
 						]
 					}
 				}
@@ -1019,7 +1019,7 @@
 									"value": "Ich weiss es nicht"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "Je ne sais pas"
 								}]
 							}
 						]
@@ -1063,7 +1063,7 @@
 							"value": "Ich weiss es nicht"
 						}, {
 							"language": "fr",
-							"value": "TRANSLATE"
+							"value": "Je ne sais pas"
 						}]
 					}
 				]
@@ -1084,7 +1084,7 @@
 									"value": "Ich habe antivirale Medikamente gegen Hepatitis C genommen und die Therapie beendet"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "J’ai déjà pris des médicaments contre l’hépatite C et terminé mon traitement"
 								}]
 							},
 							{
@@ -1095,7 +1095,7 @@
 									"value": "In Betracht gezogen aber noch nicht begonnen"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "J’ai envisagé de prendre des médicaments contre l’hépatite C mais je n’ai pas débuté le traitement"
 								}]
 							},
 							{
@@ -1106,7 +1106,7 @@
 									"value": "In Betracht gezogen, kann mir diese aber finanziell nicht leisten"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "J’ai envisagé de prendre des médicaments contre l’hépatite C mais je ne peux pas me permettre de débuter le traitement"
 								}]
 							},
 							{
@@ -1117,7 +1117,7 @@
 									"value": "In Betracht gezogen, kann diese Behandlung aber aus medizinischen Gründen nicht beginnen"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "J’ai envisagé de prendre des médicaments contre l’hépatite C mais je ne peux pas débuter le traitement pour des raisons médicales"
 								}]
 							},
 							{
@@ -1128,7 +1128,7 @@
 									"value": "In Betracht gezogen, mein Arzt hat mir aber davon abgeraten"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "J’ai envisagé de prendre des médicaments contre l’hépatite C mais mon médecin m’a déconseillé de le faire"
 								}]
 							},
 							{
@@ -1139,7 +1139,7 @@
 									"value": "Bisher habe ich eine Behandlung mit antiviralen Medikamenten gegen Hepatitis C nicht in Betracht gezogen"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "Je n’ai jamais envisagé de prendre des médicaments contre l’hépatite C"
 								}]
 							}
 						],
@@ -1176,7 +1176,7 @@
 									"value": "Nein, die Krankheit war nicht schwerwiegend genug"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "Non, car ma maladie n’était pas assez grave"
 								}]
 							},
 							{
@@ -1187,7 +1187,7 @@
 									"value": "Nein, die Versicherung hätte die Behandlung nicht übernommen"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "Non, car mon assurance n’a pas approuvé le remboursement du traitement"
 								}]
 							},
 							{
@@ -1198,7 +1198,7 @@
 									"value": "Nein; warum nicht weiss ich nicht"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "Non, je ne sais pas pourquoi"
 								}]
 							},
 							{
@@ -1209,7 +1209,7 @@
 									"value": "Anderes"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "Autres raisons"
 								}]
 							}
 						],
@@ -1271,7 +1271,7 @@
 									"value": "Keines der genannten"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "Aucun des médicaments ci-dessus"
 								}]
 							}
 						],
@@ -1427,7 +1427,7 @@
 									"value": "Während des Tages praktisch immer"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "Pendant presque toute la journée"
 								}]
 							},
 							{
@@ -1438,7 +1438,7 @@
 									"value": "Nicht sehr regelmässig"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "Pas très gégulièrement"
 								}]
 							},
 							{
@@ -1449,7 +1449,7 @@
 									"value": "Fast nie"
 								}, {
 									"language": "fr",
-									"value": "TRANSLATE"
+									"value": "Presque jamais"
 								}]
 							}
 						],

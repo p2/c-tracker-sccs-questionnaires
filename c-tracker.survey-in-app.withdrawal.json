@@ -1,7 +1,7 @@
 {
 	"resourceType": "Questionnaire",
 	"id": "c-tracker.survey-in-app.withdrawal",
-	"status": "published",
+	"status": "active",
 	"item": [
 		{
 			"linkId": "withdrawalReason",

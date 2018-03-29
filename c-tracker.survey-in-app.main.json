@@ -1264,6 +1264,14 @@
 								"display": "Epclusa (sofosbuvir + velpatasvir)"
 							},
 							{
+								"code": "1940708",
+								"display": "Maviret (glecaprevir + pibrentasvir)"
+							},
+							{
+								"code": "1939334",
+								"display": "Vosevi (sofosbuvir, velpatasvir + voxilaprevir)"
+							},
+							{
 								"code": "0",
 								"display": "None of the above",
 								"designation": [{
